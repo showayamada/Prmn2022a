@@ -5,7 +5,7 @@ public class Car2 {
         Engine engine;
         Tire[] tires;
         Car2(Tire[] tires, Engine engine) {
-            fuel = 0;
+            this.fuel = 0;
             //for文で入れる
             for (int i = 0; i <= tires.length; i++ ) {
                 this.tires[i] = tires[i];
