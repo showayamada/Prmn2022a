@@ -6,7 +6,7 @@ public class Fighter {
     private final String name;
 
     public Fighter(int hitPoint, int power, String name){
-        this.hitPoint = hitPoint;
+        setHitPoint(hitPoint);
         this.power = power;
         this.name = name;
     }
@@ -24,8 +24,8 @@ public class Fighter {
         return hitPoint;
     }
 
-    public void setHitPoint(){
-        System.out.println(this.getName() + "は残りHP:" + getHitPoint());
+    public void setHitPoint(int hitPoint) {
+        this.hitPoint = hitPoint;
     }
 
     public String getName(){
