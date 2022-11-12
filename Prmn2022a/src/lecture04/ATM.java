@@ -17,10 +17,10 @@ public class ATM {
         for (Account account : accountList) {
             if (name == account.getName() && number == account.getNumber()) {
                 System.out.println("名前：" + name + "口座番号：" + number + "は存在します");
-            }else {
-                System.out.println("名前" + name + "口座番号：" + number + "は存在しません");
+                return true;
             }
         }
+        System.out.println("名前" + name + "口座番号：" + number + "は存在しません");
         return true;
 
     }
